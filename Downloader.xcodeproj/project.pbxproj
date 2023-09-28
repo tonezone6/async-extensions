@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		DB17E97929237BE2004D97DD /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 		DB1D7D0E2AC6030200265CCA /* async-extensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "async-extensions"; sourceTree = "<group>"; };
+		DB8CE95A2AC607B800338871 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DB92D3BC290E65D100160A10 /* Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Downloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB92D3BF290E65D100160A10 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		DB92D3C3290E65D200160A10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +42,7 @@
 		DB92D3B3290E65D100160A10 = {
 			isa = PBXGroup;
 			children = (
+				DB8CE95A2AC607B800338871 /* README.md */,
 				DB1D7D0E2AC6030200265CCA /* async-extensions */,
 				DB92D3BE290E65D100160A10 /* Downloader */,
 				DB92D3BD290E65D100160A10 /* Products */,
