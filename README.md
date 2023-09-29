@@ -17,3 +17,5 @@ do {
   // error handling
 } 
 ```
+
+![Screenshot](simulator.gif)

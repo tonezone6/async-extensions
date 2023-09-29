@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB0997452AC6EFF300BC0CC4 /* simulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = simulator.gif; sourceTree = "<group>"; };
 		DB17E97929237BE2004D97DD /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 		DB1D7D0E2AC6030200265CCA /* async-extensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "async-extensions"; sourceTree = "<group>"; };
 		DB8CE95A2AC607B800338871 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		DB92D3B3290E65D100160A10 = {
 			isa = PBXGroup;
 			children = (
+				DB0997452AC6EFF300BC0CC4 /* simulator.gif */,
 				DB8CE95A2AC607B800338871 /* README.md */,
 				DB1D7D0E2AC6030200265CCA /* async-extensions */,
 				DB92D3BE290E65D100160A10 /* Downloader */,

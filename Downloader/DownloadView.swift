@@ -11,41 +11,35 @@ struct ContentView: View {
   @StateObject var model = DownloadModel()
   
   var body: some View {
-    ZStack {
-      Color(uiColor: .systemGroupedBackground).ignoresSafeArea()
-      VStack {
-        if case .idle = model.downloadStatus {
-          Text("Preparing...")
-        }
-        
-        if case let .progress(value) = model.downloadStatus {
-          VStack {
-            Text(value.formatted(.percent.notation(.compactName)))
-              .fontWeight(.medium)
-            ProgressView(value: value)
+    VStack {
+      if case .idle = model.downloadStatus {
+        Button("Download 10MB") {
+          Task {
+            try await Task.sleep(seconds: 1)
+            await model.download_10MB()
           }
         }
-        
-        if case .finished = model.downloadStatus {
-          HStack {
-            Text("Download finished")
-            Image(systemName: "checkmark.circle")
-              .fontWeight(.semibold)
-              .foregroundColor(.accentColor)
-          }
+        .buttonStyle(.borderedProminent)
+      }
+      
+      if case let .progress(value) = model.downloadStatus {
+        VStack {
+          Text(value.formatted(.percent.notation(.compactName)))
+            .fontWeight(.medium)
+          ProgressView(value: value)
         }
       }
-      .frame(width: 200, height: 40)
-      .padding()
-      .background(.white)
-      .cornerRadius(10)
-      .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(.gray.opacity(0.2), lineWidth: 2)
-      )
+      
+      if case .finished = model.downloadStatus {
+        HStack {
+          Text("Download finished")
+          Image(systemName: "checkmark.circle")
+            .fontWeight(.semibold)
+            .foregroundColor(.accentColor)
+        }
+      }
     }
-    .task {
-      await model.download_10MB()
-    }
+    .frame(width: 200)
   }
 }
 
